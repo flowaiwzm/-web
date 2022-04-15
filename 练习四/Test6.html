@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test6</title>
+    <style>
+        .A{
+            width:620px;
+            height: 410px;
+            border: 1px solid red;
+        }
+        .A>div{
+            width:300px;
+            height: 400px;
+            /* background-color: black; */
+            border: 1px solid red;
+            float: left;
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+        .B>div{
+             width: 140px;
+             height: 125px;
+             background-color: blue;
+             border: 1px solid red;
+             float:left;
+             margin-top:5px;
+             margin-left:5px;
+             text-align: center;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+        }
+        .Z{
+            display: flex;
+            align-items: center;
+             justify-content: center;
+             font-size: 20px;
+        }
+        .C{
+            width:620px;
+            height: 410px;
+            border: 1px solid red;
+        }
+        .C>div:first-child{
+            width:300px;
+            height: 200px;
+            /* background-color: black; */
+            border: 1px solid red;
+            float: left;
+            margin-left: 5px;
+            margin-top: 5px;
+            margin-top: 100px;
+        }
+        .C>div:last-child{
+            width:300px;
+            height: 200px;
+            /* background-color: black; */
+            border: 1px solid red;
+            float: right;
+            margin-left: 5px;
+            /* margin-top: 5px; */
+            margin-top: 100px;
+        }
+        .N>div{
+             width: 100px;
+             height: 50px;
+             background-color: blue;
+             border: 1px solid red;
+             float:left;
+             margin-top:10px;
+             margin-left:20px;
+             text-align: center;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+        }
+        .M{
+            display: flex;
+            align-items: center;
+             justify-content: center;
+             font-size: 20px;
+        }
+        .three{
+            border: 1px solid red;
+            width: 400px;
+            height:300px;
+        }
+        .three-1{
+            border: 1px solid rebeccapurple;
+            width: 100%;
+            height: 50px;
+        }
+        /* .three-1>div{
+            font-size: 20px;
+        } */
+        .three-1>div:first-child{
+            width: 50%;
+            height: 48px;
+            border:1px solid black;
+            font-size: 10px;
+            float: left;
+            font-size: 20px;
+        }
+       .three-1>div:last-child ,.three-1>div:nth-child(2){
+             width: 24%;
+             height: 48px;
+             border: 1px solid black;
+             font-size: 10px;
+             float: right;
+             font-size: 20px;
+        }
+        .three-2{
+            width: 100%;
+            height: 196px;
+            /* background-color: rgb(8, 8, 8); */
+        }
+        .three-2>div:first-child{
+            width:20%;
+            height: 194px;
+            border: 1px solid red;
+            float: left;
+            font-size: 20px;
+        }
+        .three-2>div:nth-child(2),.three-2>div:nth-child(3),.three-2>div:nth-child(4){
+            width:19%;
+            height: 63px;
+            border: 1px solid red;
+            float: left;
+            font-size: 20px;
+            /* margin:1px; */
+        }
+        .three-2>div:nth-child(5){
+            width:20%;
+            height: 63px;
+            border: 1px solid red;
+            float: left;
+            font-size: 20px;
+        }
+        .three-2>div:nth-child(6){
+            width:19%;
+            height: 63px;
+            border: 1px solid red;
+            float: left;
+            font-size: 20px;
+        }
+        .three-2>div:nth-child(7){
+            width:38.5%;
+            height: 63px;
+            border: 1px solid red;
+            float: left;
+            font-size: 20px;
+        }
+        .three-2>div:nth-child(8){
+            width:20%;
+            height: 129px;
+            border: 1px solid red;
+            float: right;
+            font-size: 20px;
+        }
+        .three-2>div:nth-child(9),.three-2>div:nth-child(10),.three-2>div:nth-child(11){
+            width:19%;
+            height: 63px;
+            border: 1px solid red;
+            float: left;
+            font-size: 20px;
+        }
+        .three-3{
+            border: 1px solid rebeccapurple;
+            width: 100%;
+            height: 50px;
+            font-size: 20px;
+        }
+        .three-3>div:first-child{
+            width: 49.5%;
+            height: 48px;
+            border:1px solid black;
+            font-size: 20px;
+            float: left;}
+        .three-3>div:last-child{
+            width: 49%;
+            height: 48px;
+            border:1px solid black;
+            font-size: 10px;
+            font-size: 20px;
+            float: right;}
+    </style>
+</head>
+<body>
+    <p>布局一</p>
+    <div class="A">
+        <div class="Z">Title goes here</div>
+        <div class="B">
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+            <div>D</div>
+            <div>E</div>
+            <div>F</div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <p>布局二</p>
+    <div class="C">
+        <div class="M">Title goes here</div>
+        <div class="N">
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+            <div>D</div>
+            <div>E</div>
+            <div>F</div>
+        </div>
+    </div>
+    <p>布局三</p>
+    <div class="three">
+        <div class="three-1">
+            <div>Title goes here</div>
+            <div>A</div>
+            <div>B</div>
+        </div>
+        <div class="three-2">
+            <div>C</div>
+            <div>D</div>
+            <div>E</div>
+            <div>F</div>
+            <div>G</div>
+            <div>H</div>
+            <div>I</div>
+            <div>J</div>
+            <div>K</div>
+            <div>L</div>
+            <div>M</div>
+        </div>
+        <div class="three-3">
+            <div>N</div>
+            <div>O</div>
+        </div>
+    </div>
+</body>
+</html>
