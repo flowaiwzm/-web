@@ -10,6 +10,18 @@
             background-color: red;
         }
     </style>
+     <script>
+        // var a=10;
+        // document.write(a);
+
+        window.onload = function () {
+            alert("欢迎来到前端的世界！");
+        }
+        window.onbeforeunload = function (event) {
+            var e = event || window.event;
+            e.returnValue = "记得下来再来喔！";
+        }
+    </script>
 </head>
 <frameset  rows="20%,60%,*">
     <frame src="head.html" scrolling="no"> 
