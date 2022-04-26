@@ -1,0 +1,24 @@
+h3{
+    color: rgb(96,0,0);
+}
+p{
+    color:black;
+    font-size: 12px;
+}
+tr:first-child>th{
+     background-color:rgb(96,0,0); 
+     color:rgb(255,238,204);
+}
+table{
+    margin:0 auto;
+}
+tr>td{
+    background-color: rgb(255,238,204);
+}
+tr>td:nth-child(2){
+    width:200px;
+}
+tr>td:nth-child(1){
+    /* border:5px solid black; */
+    text-align: right;
+}
