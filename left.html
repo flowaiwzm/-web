@@ -5,19 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css"> -->
     
     <style>
         *{
             margin:0;
             left: 0;
+            
         }
-        div{
+        section{
             width: auto;
             height: 1000px;
             background-color: rgb(240, 255, 242);
         }
+
         /* ul>li{
             display: flex;
             justify-content: space-around;
@@ -32,65 +34,75 @@
         }
         p{
             background-color: antiquewhite;
-        }
-        .one>li{
-            /* display:none; */
-            display: block;
-            background-color: rgb(240, 255, 242);
-            /* z-index:-1; */
-            /* border: 1px solid red; */
+            /* margin: 0; */
         }
         .one>li:hover{
             background-color: rgb(236, 163, 163);
-            transition: all 1s linear;
+            transition: all 0.3s;
         }
-
+        .two:hover{
+            background-color: rgb(236, 163, 163);
+            transition: all 0.3s;
+        }
+        li{
+            border-radius: 5px;
+            background-color: #ccc;
+            width: 200px;
+            height: 41px;
+            margin-top: 2px;
+            list-style:none;
+        }
+        i>img{
+            width:40px;
+            height: 39px;
+            float:right;
+            /* top:-2px; */
+        }
     </style>
-    <!-- <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script> -->
-    <!-- <script>
-    $( function() {
-      $( "#accordion" ).accordion();
-    } );
-    </script> -->
-    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
 </head>
 <body>
-    <div>
+    <section>
+        <p>实验二</p>
         <ul>
-            <li>练习一</li>
+            <li >练习一<i class="F"><img src="./images/下拉框.png" alt=""></i></li>
             <ul class="one">
                 <li><a href="./实验二/练习一/Test1.html" target="window">表一</a></li>
                 <li><a href="./实验二/练习一/Test2.html" target="window">表二</a></li>
                 <li><a href="./实验二/练习一/Test3.html" target="window">表三</a></li>
             </ul>
-            <li><a href="./实验二/练习二/Test4.html" target="window">练习二</a></li>
-            <li><a href="./实验二/练习三/Test5.html" target="window">练习三</a></li>
-            <li>练习四</li>
-            <ul class="two">
+            <li class="two"><a href="./实验二/练习二/Test4.html" target="window">练习二</a></li>
+            <li class="two"><a href="./实验二/练习三/Test5.html" target="window">练习三</a></li>
+            <li>练习四<i class="F"><img src="./images/下拉框.png" alt=""></i></li>
+            <ul class="one">
                 <li><a href="./实验二/练习四/表一.html" target="window">布局一</a></li>
                 <li><a href="./实验二/练习四/表二.html" target="window">布局二</a></li>
                 <li><a href="./实验二/练习四/表三.html" target="window">布局三</a></li>
                 <li><a href="./实验二/练习四/Test6.html"target="window">利用div布局效果</a></li>
             </ul>
         </ul>
+        <p>实验三</p>
         <ul>
-            <p>实验三</p>
-            <li>练习一</li>
-            <ul>
-                <li>第一小问</li>
-                <li>第二小问</li>
-                <li>第三小问</li>
-                <li>第四小问</li>
-                <li>第五小问</li>
+            <li >练习一<i class="F"><img src="./images/下拉框.png" alt=""></i></li>
+            <ul class="one">
+                <li id="n"><a href="./实验三/练习一/one.html" target="window">第一小问</a></li>
+                <li id="n"><a href="./实验三/练习一/two.html" target="window">第二小问</a></li>
+                <li id="n"><a href="./实验三/练习一/three.html" target="window">第三小问</a></li>
             </ul>
-            <li>练习二</li>
-            <li>练习三</li>
-            <li>练习四</li>
+            <li class="two"><a href="./实验三/练习二/four.html" target="window">练习二</a></li>
+            <li>练习三<i class="F"><img src="./images/下拉框.png" alt=""></i></li>
+            <ul class="one">
+                <li><a href="./实验三/练习三/five行内.html" target="window">行内形式</a></li>
+                <li><a href="./实验三/练习三/five行外.html" target="window">内联形式</a></li>
+                <li><a href="./实验三/练习三/five外嵌.html"  target="window">外嵌形式</a></li>
+            </ul>
+            <li>练习四<i class="F"><img src="./images/下拉框.png" alt=""></i></li>
+            <ul class="one">
+                <li><a href="./实验三/练习四/six行内.html" target="window">行内形式</a></li>
+                <li><a href="./实验三/练习四/six.html" target="window">内联形式</a></li>
+                <li><a href="./实验三/练习四/six外嵌.html" target="window">外嵌形式</a></li>
+            </ul>
         </ul>
-    </div>
+    </section>
+    <script src="./js/left.js"></script>
 </body>
 </html>
