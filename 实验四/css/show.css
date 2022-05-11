@@ -1,0 +1,139 @@
+.clearfix::before,
+        .clearfix::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+*{
+    margin:0;
+    left:0;    
+}
+.head{
+    width: 100%;
+    height: 10px;
+    background-color: #2C6148;
+}
+.nav{
+    width: 100%;
+    height: 50px;
+    background-color: #E7F5FE;
+    display: flex;
+}
+.nav-first{
+    width: 20%;
+    height: 50px;
+    position: relative;
+}
+.logo{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+}
+.logo>a>img{
+    width: 240px;
+    height: 50px;
+}
+.nav-second{
+    width: 30%;
+    height: 50px;
+    margin: 0 auto;
+    background-color: rgb(166, 166, 166);
+    border-radius: 10px;
+
+}
+.nav-second>p{
+    font-size: 35px;
+    text-align: center;
+    font-family: kaiti;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.nav-third{
+    width: 25%;
+    height: 50px;
+}
+.nav-third>ul{
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    /* align-items: center; */
+    /* align-content: center; */
+
+}
+.nav-third>ul>li{
+    width:31%;
+    height: 48px;
+    background-color: rgb(205, 239, 227);
+    /* text-align: center; */
+    border-radius: 10px;
+}
+li>p{
+    font-size: 30px;
+    font-family: kaiti;
+    margin-top: 10px;
+    text-align: center;
+}
+.main{
+    width: 100%;
+    height: 760px;
+    /* border: 1px solid red; */
+    display: flex;
+    overflow: scroll;
+}
+.aside{
+    flex:1;
+    /* width: 100%; */
+    height: 760px;
+    /* position: fixed; */
+    background-color: #E7F5FE;
+}
+.aside>ul{
+    width: 90%;
+  margin: 0 auto;
+}
+.aside>ul>li{
+    height: 40px;
+    list-style: none;
+    background-color: #ccc;
+    margin-top:5px;
+    border-radius: 5px;
+    text-align: center;
+}
+.aside>ul>li:hover{
+    background-color: #E7F5FE;
+}
+.aside>ul>li>a{
+    color: black;
+    font-size: 30px;
+    line-height: 40px;
+    font-family: kaiti;
+    text-decoration: none;
+    margin-top: 5px;
+}
+.content{
+    flex:5;
+    background-color: #ffffff;
+    height: 760px;
+    overflow: scroll;
+}
+.content>h1{
+    font-size: 30px;
+    font-family: kaiti;
+    text-align: center;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+.content>h1>a{
+    text-decoration: none;
+    color: black;
+}
+.content>p{
+    font-size: 25px;
+    font-family: kaiti;
+
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: kaiti;
+}
