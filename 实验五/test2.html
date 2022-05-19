@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Will you come with me?</p>
+    <p>Will you come with me?</p>
+    <p>Will you come with me?</p>
+    <script>
+        var b=document.getElementsByTagName("p");
+        b[0].onclick= function random(){
+            var a=Math.floor(Math.random()*3);
+            if(a==0){
+            //  b[1].style.color="red";
+             b[0].innerHTML="yes!";
+            }
+            else if(a==1){
+                // b[1].style.color="blue";
+                b[0].innerHTML="no!";
+            }
+            else{
+                b[0].innerHTML="Maybe!";
+            }
+        }
+       b[1].onclick= function random(){
+            var a=Math.floor(Math.random()*3);
+            if(a==0){
+            //  b[1].style.color="red";
+             b[1].innerHTML="yes!";
+            }
+            else if(a==1){
+                // b[1].style.color="blue";
+                b[1].innerHTML="no!";
+            }
+            else{
+                b[1].innerHTML="Maybe!";
+            }
+        }
+        b[2].onclick= function random(){
+            var a=Math.floor(Math.random()*3);
+            if(a==0){
+            //  b[1].style.color="red";
+             b[2].innerHTML="yes!";
+            }
+            else if(a==1){
+                // b[1].style.color="blue";
+                b[2].innerHTML="no!";
+            }
+            else{
+                b[2].innerHTML="Maybe!";
+            }
+        }
+        random()
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<span  onmouseover="move()">Kiss ME</span>
+</body>
+<script>
+    function move(){
+        var a=document.getElementsByTagName("span");
+        var b=document.createElement("marquee");
+        b.className="marquee";
+        a[0].parentNode.replaceChild(b,a[0]);
+        a[0].style.color="red";
+        b.innerHTML="Kiss Me"
+        b.style.color="blue";
+        b.direction="left";
+        b.behavior="alternate";
+    }
+</script>
+</html>

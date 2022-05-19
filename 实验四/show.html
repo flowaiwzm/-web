@@ -7,7 +7,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/show.css">
-
+<script>
+    window.onload=function(){
+        window.alert("打开代码可能会有卡顿，请稍等！！！")
+    }
+</script>
 </head>
 <body>
     <div class="head"></div>
@@ -32,20 +36,41 @@
     <div class="main">
        <div class="aside">
            <ul>
+               <li><a href="">代码实现</a></li>
                <li><a href="#1">练习1</a></li>
                <li><a href="#2">练习2</a></li>
                <li><a href="#3">练习3</a></li>
                <li><a href="#4">练习4</a></li>
                <li><a href="#5">练习5</a></li>
                <li><a href="#6">练习6</a></li>
+               <li><a href="#a">实验总结</a></li>
+               <li><a href="#b">实验创新</a></li>
            </ul>
        </div>
        <div class="content">
+           <h1>实验报告</h1>
+           <h2 style="text-align: left">解题思路：</h2><br><br>
+           <p>
+            练习一:<br><br>
+            练习一涉及到的表单的知识点有：简单的文本框的实现；下拉框的实现；多选框的实现与单选框的实现；按钮的设置；在实现简单文本框时候运用placeholder="FirstName LastName"对于input中的Placeholder属性设置文本框中默认值；在表单整体设计结束后利用css将按钮和下拉框的样式进行适当的改变。<br><br>
+            练习二:<br>
+            对于该题主要结合div和form表单上的结合，一个div嵌套一个子div，在子div中实现form表单的实现。其中form中所涉及到的知识点的同上题基本一致；设计完后将按钮设计和form表的样式进行调整即可<br><br>
+            练习三:<br><br>
+            对于练习三的主要不同上题是加上一个textarea多行文本框知识点<br><br>
+            练习四：<br><br>
+            对于练习四主要的知识点涉及到iframe元素会创建包含另外一个文档的内联框架（即行内框架），但是实验四中百度网站的调用无法访问，主要是百度为了保护百度网站的安全性，拒绝了外界iframe的访问；所以本实验中采取了访问中南林的官网<br><br>
+            练习五:<br><br>
+            对于练习五主要目的是利用div实现页面布局，主要是利用div的嵌套和浮动的原理来实现页面布局；也可以利用flex伸缩盒模型实现这个简单页面；对于文字垂直居中可以采取div的高度和line-height相等再利用text-align居中即可；还可以采取flex的属性来进行垂直居中。<br><br>
+            练习六:<br><br>
+            对于练习六主要实现的一个导航栏的下拉框。主要实现的知识点为无序列表的嵌套，列表的默认的外边距等消除，列表中的内容垂直居中（flex和行高等于li高度），利用hover选择器实现下拉下拉效果或者利用js实现也可。<br>
+            </p>
+            <h1>实现方法</h1><br>
            <h1 id="1">练习一</h1><br>
            <p>1.使用您的Web 编辑器 ,您将创建一个简单的HTML表单</p><br>
            <div class="div-first">
               <img src="https://cdn.jsdelivr.net/gh/flowaiwzm/Photo@main/gongconghao20220508194127.png"/>
               <h2>结果展示</h2><br>
+              <p>若出现尺寸不对，可点击*0.5倍</p><br>
               <iframe height="700" style="width: 100%;" scrolling="no" title="问题一" src="https://codepen.io/flowaiwzm/embed/oNExPMW?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
                 See the Pen <a href="https://codepen.io/flowaiwzm/pen/oNExPMW">
                 问题一</a> by flowaiwzm (<a href="https://codepen.io/flowaiwzm">@flowaiwzm</a>)
@@ -56,6 +81,7 @@
            <p>2.使用您的Web 编辑器 ,您将创建一个简单的HTML表单</p><br>
            <img src="https://cdn.jsdelivr.net/gh/flowaiwzm/Photo@main/gongconghao20220508194235.png"/><br>
            <h2>结果展示</h2><br>
+           <p>若出现尺寸不对，可点击*0.5倍</p><br>
            <iframe height="700" style="width: 100%;" scrolling="yes" title="问题二" src="https://codepen.io/flowaiwzm/embed/poayxov?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
             See the Pen <a href="https://codepen.io/flowaiwzm/pen/poayxov">
             问题二</a> by flowaiwzm (<a href="https://codepen.io/flowaiwzm">@flowaiwzm</a>)
@@ -65,6 +91,7 @@
            <p>3.使用您的Web 编辑器 ,您将创建一个简单的HTML表单</p><br>
            <img src="https://cdn.jsdelivr.net/gh/flowaiwzm/Photo@main/gongconghao20220508195728.png"/><br>
            <h2>结果展示</h2><br>
+           <p>若出现尺寸不对，可点击*0.5倍</p><br>
            <iframe height="700" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/flowaiwzm/embed/bGLpQMR?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
             See the Pen <a href="https://codepen.io/flowaiwzm/pen/bGLpQMR">
             Untitled</a> by flowaiwzm (<a href="https://codepen.io/flowaiwzm">@flowaiwzm</a>)
@@ -73,6 +100,7 @@
            <h1 id="4">练习四</h1><br>
            <p>4.使用您的Web 编辑器 ,您将创建一个简单的HTML表单,1.	在 Web 编辑器中键入此代码，并将  iframe 边框的颜色更改为洋红色,并将链接更改为“www.baidu.com”</p><br>
            <h2>结果展示</h2><br>
+           <p>若出现尺寸不对，可点击*0.5倍</p><br>
            <iframe height="700" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/flowaiwzm/embed/VwQaVge?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
             See the Pen <a href="https://codepen.io/flowaiwzm/pen/VwQaVge">
             Untitled</a> by flowaiwzm (<a href="https://codepen.io/flowaiwzm">@flowaiwzm</a>)
@@ -91,11 +119,40 @@
            <p>6.使用您的Web 编辑器 ,您将创建一个简单的HTML表单</p><br>
            <img src="https://cdn.jsdelivr.net/gh/flowaiwzm/Photo@main/gongconghao20220508195829.png"/><br>
            <h2>结果展示</h2><br>
+           <p>由于在线编译器不能实现hover的子类选择器的原理不能在线实现下拉框效果，请打开<a href="./实验六.html">这个链接，若还实现不了利用edge打开即可</a></p><br>
            <iframe height="700" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/flowaiwzm/embed/XWZdGjY?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
             See the Pen <a href="https://codepen.io/flowaiwzm/pen/XWZdGjY">
             Untitled</a> by flowaiwzm (<a href="https://codepen.io/flowaiwzm">@flowaiwzm</a>)
             on <a href="https://codepen.io">CodePen</a>.
-          </iframe><br>
+          </iframe><br><br>
+        <h1 id="a">实验总结</h1><br>
+        <p>一. 表单分组<br>
+            fieldset：对表单进行分组，一个表单可以有多个fieldset。（注：自带边框）<br>
+            legend：对该组fieldset表单的描述。（相当于标题）<br><br>
+            
+            二. form属性<br>
+            (1)action: 该属性用来指定处理数据程序的URL地址<br>
+            (2)method：该属性用来指定数据传输到服务器的方式。有两种属性值：post和get<br>
+            (3)name: 用来指定表单的名称<br>
+            (4)target：属性值有_blank(在新窗口打开) 、_self（在同一窗口打开）、_parent（在上一级窗口打开）、_top（在浏览器整个窗口打开，忽略任何框架）<br><br>
+
+            三. input的属性<br>
+            1、type 属性：reset submit等<br>
+            2、name 属性：<br>
+        规定 input 元素的名称，对提交到服务器后的表单数据进行标识。 只有设置了 name 属性的表单元素才能在提交表单时传递它们的值。<br>
+        3、checked 属性：<br> 规定此 input 元素首次加载时应当被选中，布尔属性，不需要值。 与  type="checkbox"或 type="radio"配合使用。<br>
+        4、placeholder 属性:<br>
+        placeholder 属性的属性值会显示在表单控件中，为填写表单的人提供输入提示。一旦用户输入文本，占位文本即消失。<br><br>
+        四.文本域<br>
+        文本域是一个多行的文本输入控件，当用户需要在表单中输入大段文字时，需要用到文本输入域。文本域通过 textarea 标签完成。<br><br>
+            五、下拉列表框<br>
+        下拉列表在网页中也常会用到，它可以有效的节省网页空间。既可以单选、也可以多选。下拉列表框通过 select 标签 和 option 标签完成。<br><br>
+        </p><br><br>
+        <h1 id="b">实验创新</h1><br>
+        <p>
+            1.利用div和伸缩盒flex设计了一个新的实验成果展示界面<br>
+            2.利用codepen软件实现所编写代码在所在界面的显示，更加简洁明了<br>
+        </p>
         </div>
     </div>
 </body>

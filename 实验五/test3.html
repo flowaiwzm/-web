@@ -1,0 +1,18 @@
+	<!DOCTYPE html>
+	<html>
+    <head>
+<script src="test3.js"></script>
+    </head>
+	<body>
+	<button onclick="myFunction()" style="width: 80px; height: 20px;"></button>
+	<p id="demo">Hello World</p>
+	<script>
+       function myFunction() {
+          var a=document.getElementById("demo");
+          var b=document.getElementsByTagName("button")[0];
+          b.innerHTML="Click Me";
+          a.style.display="none";
+       }
+	</script>
+	</body>
+	</html>

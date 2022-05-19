@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="test5.js"></script>
+    <style>
+        .main{
+            width: 600px;
+            height: 400px;
+            background-color: #00FFFF;
+        }
+        .header{
+            width: 100%;
+            height: 80px;
+        }
+        h1{
+            line-height: 80px;
+            text-align: center;
+        }
+        .center{
+            width: 100%;
+            height: 270px;
+            /* background-color: bisque; */
+            border-top: solid red;
+            border-bottom: solid red;
+        }
+        .footer{
+            width: 100%;
+            height: 50px;
+            /* background-color: black; */
+        }
+        form{
+            padding-top: 50px;
+            text-align: center;
+        }
+        button{
+            width: 60px;
+            height: 30px;
+            margin-left: 25px;
+            border-radius: 10px;
+            border: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <h1>Simple Calculator using JS </h1>
+        </div>
+        <div class="center">
+        <form>
+            <label>Enter 1st value : <input id="1" type="text" ></label><br><br>
+            <label>Enter 2st value : <input id="input2" type="text"></label><br><br>
+           <label for="" style="margin-left: 64px;">Result : <input type="text" id="output"></label>
+        </form>
+        <div style="margin-left: 130px; margin-top: 30px;">
+        <button onclick="fun1()">+</button>
+        <button onclick="fun2()">-</button>
+        <button onclick="fun3()">*</button>
+        <button onclick="fun4()">/</button>
+        </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
