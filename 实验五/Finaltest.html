@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="test6.js"></script>
+    <style>
+        .main{
+            width: 1000px;
+            height: 600px;
+            background-color: #FCD8D4;
+            box-shadow: 0 1px 6px rgb(0 0 0 / 10%);
+            border-radius: 20px;
+        }
+        .header{
+            width: 100%;
+            height: 100px;
+        }
+        h1{
+            line-height: 100px;
+            text-align: center;
+
+        }
+        .center{
+            width: 100%;
+            height: 400px;
+            border-top: solid #FFBCBC;
+            border-bottom: solid #FFBCBC;
+            background-color: #FDF6F0;
+        }
+        table{
+            margin-top: 20px;
+            /* background-color: aliceblue; */
+        }
+        td{
+        }
+        .footer{
+            width: 100%;
+            height: 50px;
+        }
+        form{
+            padding-top: 50px;
+            text-align: center;
+        }
+        button{
+            width: 40px;
+            height: 40px;
+            margin-left: 25px;
+            border-radius: 50%;
+            border: white;
+            background-color: #CDF0EA;
+            
+        }
+        button:hover{
+            background-color: rgb(33, 248, 209);
+            ;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <h1>Simple Calculator using JS </h1>
+        </div>
+        <div class="center">
+        <form>
+            <label>Enter 1st value : <input id="input1" type="text"  readonly="readonly" onclick="inputone()"></label><br><br>
+            <label>Enter 2st value : <input id="input2" type="text"  readonly="readonly" onclick="inputtwo()"></label><br><br>
+           <label for="" style="margin-left: 64px;">Result : <input type="text" id="output" readonly="readonly"></label>
+        </form>
+        <div style="margin-left: 325px; margin-top: 30px;" id="jsu">
+        <table cellspacing="5">
+            <tr>
+                <td>
+                    <button onclick="fun1()">+</button>
+                </td>
+                <td>
+                    <button onclick="fun2()">-</button>
+                </td>
+                <td>
+                    <button onclick="fun3()">*</button>
+                </td>
+                <td>
+                    <button onclick="fun4()">/</button>
+                </td>
+                <td>
+                    <button onclick="fun7()">&radic;</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="btn" value="1">1</button>
+                </td>
+                <td>
+                    <button class="btn" value="2">2</button>
+                </td>
+                <td>
+                    <button class="btn" value="3">3</button>
+                </td>
+                <td>
+                    <button onclick="fun5()">^</button>
+                </td>
+                <td>
+                    <button onclick="fun8()">！</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="btn" value="4">4</button>
+                </td>
+                <td>
+                    <button class="btn" value="5">5</button>
+                </td>
+                <td>
+                    <button class="btn" value="6">6</button>
+                </td>
+                <td>
+                    <button class="btn" value="0">0</button></td>
+                <td>
+                    <button onclick="fun6()">%</button>
+                </td>
+                
+            </tr>
+            <tr>
+                <td>
+                    <button class="btn" value="7">7</button>
+                </td>
+                <td>
+                    <button class="btn" value="8">8</button>
+                </td>
+                <td>
+                    <button class="btn" value="9">9</button>
+                </td>
+                <td>
+                    <button>C</button>
+                </td>
+                <td>
+                <button   id="del" onclick="fun7()">del</button>
+                </td>
+            </tr>
+        </table>
+        </div>
+        </div>
+        <div class="footer">
+            <p></p>
+        </div>
+    </div>
+    <script>
+        const bn = document.querySelectorAll('.btn')
+        var ip1=document.getElementById("input1");
+        var ip2=document.getElementById("input2");
+        var op=document.getElementById("output");
+        var del=document.getElementById("del");
+        function inputone(){
+        for (var i = 0; i < bn.length; i++) { //遍历Radio 
+          bn[i].onclick=function(){
+          ip1.value+=this.value; }   
+        }
+        del.onclick=function(){
+            ip1.value="";
+            op.value="";
+        }
+}
+        function inputtwo(){
+        for (var i = 0; i < bn.length; i++) { //遍历Radio 
+          bn[i].onclick=function(){
+          ip2.value+=this.value; 
+        }
+        }
+        del.onclick=function(){
+            ip2.value="";
+            op.value="";
+        }
+}
+    </script>
+</body>
+</html>

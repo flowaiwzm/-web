@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/show.css">
+<script>
+    window.onload=function(){
+        window.alert("打开代码可能会有卡顿，请稍等！！！")
+    }
+</script>
+</head>
+<body>
+    <div class="head"></div>
+    <div class="nav">
+        <div class="nav-first"></div>
+        <h1 class="logo">
+            <a href="https://www.csuft.edu.cn/">
+                <img src="./img/中南林业科技大学.png" alt="xuexiao">
+            </a>
+        </h1>
+        <div class="nav-second">
+            <p>实验四</p>
+        </div>
+        <div class="nav-third">
+            <ul>
+                <li><p>20204011</p></li>
+                <li><p>李文主</p></li>
+                <li><p>信计三班</p></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+       <div class="aside">
+           <ul>
+               <li><a href="">代码实现</a></li>
+               <li><a href="#1">练习1</a></li>
+               <li><a href="#2">练习2</a></li>
+               <li><a href="#3">练习3</a></li>
+               <li><a href="#4">练习4</a></li>
+               <li><a href="#5">练习5</a></li>
+               <li><a href="#a">实验总结</a></li>
+               <li><a href="#b">实验创新</a></li>
+           </ul>
+       </div>
+       <div class="content">
+           <h1>实验报告</h1>
+           <h2 style="text-align: left">解题思路：</h2><br><br>
+           <p>
+            练习一:<br><br>
+            对于练习一主要使通过js中的函数创建p标签、设置p标签的样式和对于使用三种不同的方式将p标签在网页中进行显示。<br>innerHTML()方法主要是通过获取网页中p标签的节点进行设置;
+            <br>document.write()方法是直接将p标签写入到网页当中。在直接设置p的样式<br>对于window.alert()方法在此实验中通过对该方法进行重写来实现p标签样式实现<br><br>
+            练习二:<br>
+            对于练习二需要解决的问题使实现点击随机生成函数;通过利用js将三个p标签分别添加上点击事件,通过点击实现调用随机生成函数;对于第二小问只是像css相同,将js代码写在外部然后利用script将js代码进行引入。<br><br>
+            练习三:<br><br>
+            对于练习三考虑的重点在于实现按钮的点击事件的函数;通过设置p标签的display的属性和button按钮的值实现本题<br><br>
+            练习四：<br><br>
+            对于练习四主要的知识点marquee方法结合js实现本题当鼠标在Kiss me please!时实现文字从右向左的效果;主要实现在于通过获取span元素的节点对该节点进行操作实现滚动效果<br><br>
+            练习五:<br><br>
+            对于练习五主要目的是实现基本的四则计算器功能;首先通过div实现计算器的基本布局;显然将计算器分为header、center和footer 三部分;实现基本布局后,然后通过js实现四则方法,对于四个按钮添加点击事件,利用键盘将第一个和第二个输入框输入数字，利用js获取输入框当中的值，注意此时的值是字符串需要使用parseINT函数将字符串转化为数字进行数值计算;将计算结果赋给Result的输入框中。注意这里使用结果输入框设置为readonly="readonly"不可键盘输入<br><br>
+            </p>
+            <h1>实现方法</h1><br>
+           <h1 id="1">练习一</h1><br>
+           <p>1.innerHTML()、document()的实现结果</p><br>
+           <div class="div-first">
+              <h2>结果展示</h2><br>
+              <p>若出现尺寸不对，可点击*0.5倍</p><br>
+              <p>若无法显示则<a href="test1.html">点击此处</a></p><br>
+              <iframe height="600" style="width: 100%;" scrolling="no" title="实验五练习一" src="https://codepen.io/flowaiwzm/embed/GRQyVEj?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/flowaiwzm/pen/GRQyVEj">
+                实验五练习一</a> by flowaiwzm (<a href="https://codepen.io/flowaiwzm">@flowaiwzm</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe><br>
+            </div>
+            <p>2.window.alter()的实现结果</p><br>
+            <p>若无法显示则<a href="test12.html">点击此处</a></p><br>
+            <div class="div-first">
+                <iframe height="600" style="width: 100%;" scrolling="no" title="实验五实验一（1）" src="https://codepen.io/flowaiwzm/embed/rNJpXzo?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                    See the Pen <a href="https://codepen.io/flowaiwzm/pen/rNJpXzo">
+                    实验五实验一（1）</a> by flowaiwzm (<a href="https://codepen.io/flowaiwzm">@flowaiwzm</a>)
+                    on <a href="https://codepen.io">CodePen</a>.
+                  </iframe><br>
+              </div>
+           <h1 id="2">练习二</h1><br>
+           <p>2.Random随机生成函数的实现</p><br>
+           <h2>结果展示</h2><br>
+           <p>若无法显示则<a href="test2.html">点击此处</a></p><br>
+           <p>若出现尺寸不对，可点击*0.5倍</p><br>
+           <iframe height="600" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/flowaiwzm/embed/wvypVrq?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/flowaiwzm/pen/wvypVrq">
+            Untitled</a> by flowaiwzm (<a href="https://codepen.io/flowaiwzm">@flowaiwzm</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+           <h1 id="3">练习三</h1><br>
+           <p>3.1.	Consider the following JavaScript code. First display the result of this code then change it so that when the button is clicked then “hello world” will disappear and will replace the name of the button “Click Me”. </p><br>
+           <br>
+           <h2>结果展示</h2><br>
+           <p>若出现尺寸不对，可点击*0.5倍</p><br>
+           <p>若无法显示则<a href="test3.html">点击此处</a></p><br>
+           <iframe height="600" style="width: 100%;" scrolling="no" title="实验五练习三" src="https://codepen.io/flowaiwzm/embed/xxYpvPv?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/flowaiwzm/pen/xxYpvPv">
+            实验五练习三</a> by flowaiwzm (<a href="https://codepen.io/flowaiwzm">@flowaiwzm</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe><br>
+           <h1 id="4">练习四</h1><br>
+           <p>4.1.	Consider the following JavaScript code. First display the result of this code then change it so that when someone moves the mouse on the sentence “Kiss me please!” then the color will be blue and the sentence will move from the right to left (think of using marquee</p><br>
+           <h2>结果展示</h2><br>
+           <p>若出现尺寸不对，可点击*0.5倍</p><br>
+           <p>若无法显示则<a href="test4.html">点击此处</a></p><br>
+           <iframe height="600" style="width: 100%;" scrolling="no" title="实验五练习四" src="https://codepen.io/flowaiwzm/embed/RwQxXQG?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/flowaiwzm/pen/RwQxXQG">
+            实验五练习四</a> by flowaiwzm (<a href="https://codepen.io/flowaiwzm">@flowaiwzm</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe><br>
+           <h1 id="5">练习五</h1><br>
+           <p>5.计算器的实现</p><br>
+           <br>
+           <h2>结果展示</h2><br>
+           <p>若无法显示则<a href="test5.html">点击此处</a></p><br>
+           <iframe height="600" style="width: 100%;" scrolling="no" title="实验五练习五" src="https://codepen.io/flowaiwzm/embed/XWZVvZG?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/flowaiwzm/pen/XWZVvZG">
+            实验五练习五</a> by flowaiwzm (<a href="https://codepen.io/flowaiwzm">@flowaiwzm</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe><br><br>
+        <h1 id="a">实验总结</h1><br>
+        <p>
+            一、document.write()、InnerHTML()和Alter <br>
+            1.document.write直接输出在浏览器，后面继续write ，内容会一直在后面添加。<br>
+            2.innerHTML就是获取或设置指定DOM元素(id)的内容<br>
+            注意：document.write只推荐在页面onload之前使用而如果网页已经加载完毕,用innerHTML会更安全一点,用document.write会出错<br>
+            3.alter的作用主要是实现弹窗的效果而本题利用重写实现效果<br>
+            二、函数的使用<br>
+            1.JS中的函数：把一段需要重复使用的代码，用function语法包起来，方便重复调用，分块和简化代码。复杂一点的，也会加入封装、抽象、分类等思想<br>
+            2.本实验中利用许多的调用函数来实现题中的效果如Random函数等;<br>
+            3.对于本次实验中的对于每个函数的调用有点击事件函数的调用，有加载网页时会自动调用等；<br>
+            三、DOM(文档对象模型)的操作<br>
+            1.找对象（元素节点）设置元素的属性值 设置元素的样式 动态创建和删除元素 事件的触发响应：事件源、事件、事件的驱动程序
+            2.
+            var div1 = document.getElementById("box1"); //方式一：通过 id 获取 一个 元素节点（为什么是一个呢？因为 id 是唯一的）<br>
+            var arr1 = document.getElementsByTagName("div"); //方式二：通过 标签名 获取 元素节点数组，所以有s <br>
+           var arr2 = document.getElementsByClassName("hehe"); //方式三：通过 类名 获取 元素节点数组，所以有s <br>
+           四、字符串的操作<br>
+           1.字符串转为数字利用parseInt函数将字符串转为数字<br>
+           2.将数字转换成字符串利用tostring函数来进行操作<br>
+        </p>
+        <h1 id="b">实验创新</h1><br>
+        <p>
+            1.利用div和伸缩盒flex设计了一个新的实验成果展示界面<br>
+            2.利用codepen软件实现所编写代码在所在界面的显示，更加简洁明了<br>
+            3.利用js将alter方法进行重写实现效果<br>
+            4.在练习二中通过使用js实现了当点击第二次时会返回原来p元素中的内容<br>
+            5.练习五中通过文本框的属性实现了结果框不能使用键盘输入结果<br>
+        </p>
+        </div>
+    </div>
+</body>
+</html>

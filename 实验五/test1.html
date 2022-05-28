@@ -23,38 +23,6 @@
             a.style.fontSize="35px";
             // window.alter
        }
-        window.alert=alert;
-        function alert(data){
-            var d=document.createElement("div");
-            var c=document.createElement("p");
-            css(d, {
-
-            "color":"red",
-            "font-size":"35px"
-
-            });
-            d.appendChild(c);
-            textNode = document.createTextNode(data ? data : "")
-            c.appendChild(textNode);
-            // c.innerHTML="Hello Central South University！";
-            document.getElementsByTagName("body")[0].appendChild(d);
-            // b.style.color="red";
-            // b.style.fontSize="35px";
-            function css(targetObj, cssObj) {
-
-            var str = targetObj.getAttribute("style") ? targetObj.getAttribute("style") : "";
-
-            for(var i in cssObj) {
-
-            str += i + ":" + cssObj[i] + ";";
-
-            }
-
-            targetObj.style.cssText = str;
-
-            }
-        }
-        alert("Hello Central South University！");
         Myfunction();
     </script>
 </body>

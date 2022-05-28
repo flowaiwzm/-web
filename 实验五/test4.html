@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
 <body>
-<span  onmouseover="move()">Kiss ME</span>
+<span  onmouseover="move()">Kiss ME please!</span>
 </body>
 <script>
+    var a=document.getElementsByTagName("span");
+    a[0].style.color="red";
     function move(){
         var a=document.getElementsByTagName("span");
         var b=document.createElement("marquee");
         b.className="marquee";
         a[0].parentNode.replaceChild(b,a[0]);
-        a[0].style.color="red";
-        b.innerHTML="Kiss Me"
+        b.innerHTML="Kiss Me please!"
         b.style.color="blue";
         b.direction="left";
         b.behavior="alternate";
